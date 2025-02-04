@@ -397,6 +397,9 @@ class AnimatedPulseFocusLightState extends AnimatedFocusLightState {
       label: widget.backgroundSemanticLabel,
       button: true,
       child: InkWell(
+        hoverColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         excludeFromSemantics: true,
         onTap: _targetFocus.enableOverlayTab
             ? () => _tapHandler(overlayTap: true)
@@ -418,6 +421,9 @@ class AnimatedPulseFocusLightState extends AnimatedFocusLightState {
                       left: left,
                       top: top,
                       child: InkWell(
+                        hoverColor: Colors.transparent,
+                        splashColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
                         borderRadius: _betBorderRadiusTarget(),
                         onTap: _targetFocus.enableTargetTab
                             ? () => _tapHandler(targetTap: true)
