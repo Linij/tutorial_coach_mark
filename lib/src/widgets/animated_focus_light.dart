@@ -294,6 +294,9 @@ class AnimatedStaticFocusLightState extends AnimatedFocusLightState {
       label: widget.backgroundSemanticLabel,
       button: true,
       child: InkWell(
+        hoverColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         excludeFromSemantics: true,
         onTap: _targetFocus.enableOverlayTab
             ? () => _tapHandler(overlayTap: true)
@@ -309,6 +312,9 @@ class AnimatedStaticFocusLightState extends AnimatedFocusLightState {
                   left: left,
                   top: top,
                   child: InkWell(
+                    hoverColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
                     borderRadius: _betBorderRadiusTarget(),
                     onTapDown: _tapHandlerForPosition,
                     onTap: _targetFocus.enableTargetTab
